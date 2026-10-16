@@ -6,7 +6,11 @@ A frame-by-frame vector recreation of "Daisy", a 20.7-second motion-design reel 
 [fframes](https://github.com/dmtrKovalenko/fframes) ([fframes.studio](https://fframes.studio)).
 See [Credits](#credits).
 
-![Eight frames from the rendered video](media/preview.jpg)
+
+
+https://github.com/user-attachments/assets/0e015fbf-2ed7-4c77-ab43-25f5eddf1a61
+
+
 
 Rendered result: [media/v2.mp4](media/v2.mp4) (960×720, 30 fps, 620 frames, with audio).
 
