@@ -11,6 +11,6 @@ test_render/
 _frame_snapshots/*.actual.png
 _frame_snapshots/*.diff.png
 /out/
-/assets/roto/
 /assets/*.ttf
 __pycache__/
+!assets/soundtrack.wav
