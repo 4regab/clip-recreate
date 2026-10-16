@@ -1,7 +1,10 @@
 # clip-recreate
 
-A frame-by-frame vector recreation of a 20.7-second motion-design clip, rendered in Rust with
+A frame-by-frame vector recreation of "Daisy", a 20.7-second motion-design reel by
+[@oxime.fx](https://www.instagram.com/reels/DeTHQPrpnOM/), set to the song "Daisy" by
+[@delorians_](https://www.instagram.com/delorians_/). Rendered in Rust with
 [fframes](https://github.com/dmtrKovalenko/fframes) ([fframes.studio](https://fframes.studio)).
+See [Credits](#credits).
 
 ![Eight frames from the rendered video](media/preview.jpg)
 
@@ -102,7 +105,14 @@ media/v2.mp4        the rendered video
 r.ps1               Windows build-and-run helper
 ```
 
-## Note
+## Credits
 
-The traced frames and the audio come from a third-party clip. They are included only so the
-render can be reproduced. They are not covered by any licence for this code.
+- Original motion design: "Daisy" by Vishal Kushwah
+  ([@oxime.fx](https://www.instagram.com/oxime.fx/)), made in After Effects.
+  [Watch the original reel](https://www.instagram.com/reels/DeTHQPrpnOM/).
+- Song: "Daisy" by [@delorians_](https://www.instagram.com/delorians_/).
+- Rendering: [fframes](https://github.com/dmtrKovalenko/fframes) by Dmitriy Kovalenko.
+
+The traced frames in `assets/roto/` and the audio in `assets/soundtrack.wav` come from the
+original reel. They belong to their creators. They are included only so the render can be
+reproduced, and no licence for this code covers them.
