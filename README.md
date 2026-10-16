@@ -29,7 +29,9 @@ Rendered result: [media/v2.mp4](media/v2.mp4) (960×720, 30 fps, 620 frames, wit
 ## Requirements
 
 - Rust, from <https://rustup.rs>
-- A GPU with Vulkan drivers
+- Vulkan graphics support. The renderer draws on the GPU through Vulkan and stops with
+  "GPU context" if Vulkan is missing. Any recent graphics card or integrated Intel/AMD
+  graphics works with an up-to-date driver.
 - Windows:
   - FFmpeg 9 shared build: `ffmpeg-n9.0-latest-win64-gpl-shared` from
     [BtbN/FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds/releases), unzipped anywhere
@@ -57,8 +59,8 @@ $env:LIBCLANG_PATH = 'C:\Program Files\LLVM\bin'
 .\r.ps1 render -o out\v2.mp4
 ```
 
-The first build compiles Skia and every dependency, which takes a while. Later builds take
-seconds.
+The first build compiles Skia and every dependency. That took about 7 minutes on an 8-core PC.
+Later builds take seconds. The render itself takes about 20 seconds.
 
 ### Linux and macOS
 
@@ -79,6 +81,9 @@ cargo run --release -- render -o out/v2.mp4
 ```
 
 On Linux and macOS, use `cargo run --release -- <command>` instead of `.\r.ps1 <command>`.
+
+The Windows steps are tested. The Linux and macOS steps are not. macOS has no built-in Vulkan,
+so it needs MoltenVK from the [Vulkan SDK](https://vulkan.lunarg.com/sdk/home).
 
 ## Re-tracing the frames (optional)
 

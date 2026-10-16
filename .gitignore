@@ -14,3 +14,4 @@ _frame_snapshots/*.diff.png
 /assets/*.ttf
 __pycache__/
 !assets/soundtrack.wav
+/out_test/
